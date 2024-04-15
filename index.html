@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <!-- custom css file -->
+  <link rel="stylesheet" href="css/style.css"/>
+  <title>Event Website</title>
+</head>
+<body>
+  <!-- Header section start -->
+  <header>
+    <a class="navbar-brand" href="#">
+      <img src="images/Humber_Logo.png" class="logo" alt="logo" />
+    </a>
+    <div class="icons">
+      <i class="fas fa-calendar-plus"></i>
+      <i class="fas fa-search" id="search-btn"></i>
+      <i class="fas fa-user" id="login-btn"></i>
+    </div>
+    <form action="" class="search-bar-container">
+      <input type="search" id="search-bar" placeholder="search here...">
+      <label for="search-bar" class="fas fa-search"></label>
+    </form>
+  </header>
+  <!-- Header section end -->
+
+  <!-- login form container -->
+  <div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+      <h3>login</h3>
+      <input type="email" class="box" placeholder="enter your Humber email">
+      <input type="password" class="box" placeholder="enter your password">
+      <input type="submit" value="login now" class="btn">
+      <input type="checkbox" id="remember">
+      <label for="remember">Remember me</label>
+      <p>forget password? <a href="#">click here</a></p>
+      <p>don't have an account? <a href="#">register now</a></p>
+    </form>
+  </div>
+  <!-- login form container end -->
+  <!-- Back section start -->
+  <div class="back-btn">
+    <a href="#" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back</a>
+  </div>
+  <!-- Back section end -->
+  <!-- information section start -->
+  <section id="info" class="info">
+    <div class="row">
+      <div class="img-event">
+        <img src="images/Mask group.png" alt="Popular">
+      </div>
+      <div class="event-info">
+        <div class="event-name">
+          <h1><a href="https://humber.ca/today/events/i-m-too-busy-how-manage-your-time-57001">APA Workshop</a></h1>
+          <p><i class="fa-solid fa-ticket"></i> Free</p>
+        </div>
+        <div class="event-submit">
+          <form action="./register.html"><input type="submit" class="btn" value="Register"></form>  
+          <i id="bookmarkIcon" class="fa-regular fa-bookmark" onclick="toggleBookmark()"></i>
+          <i id="shareIcon" class="fa-solid fa-share"></i>
+        </div>
+        <div class="contact-info">
+          <ul class="list-unstyled">
+            <li><i class="fa fa-calendar" aria-hidden="true"></i> March 26, 2024 <i class="fa-regular fa-clock clock"></i> 12:00 PM </li>
+            <li><i class="fa fa-map-marker"></i> Lakeshore Campus, F Building, F201<br>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- information section end -->
+  <!-- Details section start -->
+  <section id="description" class="description">
+    <div class="row">
+      <div class="event-description">
+        <h2>Event Details</h2>
+        <p>The APA workshops offer students a chance to review APA basics, learn to navigate APA resources, and to ask questions about specific APA formatting and citing guidelines.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Details section end -->
+  <!-- Host section starts -->
+  <section id="host" class="host">
+    <div class="row">
+      <div class="event-host">
+        <h2>Host</h2>
+        <img src="images/Rectangle1.png" alt="Host" />
+      </div>
+    </div>
+  </section>
+  <!-- Host section end -->
+  <!-- Attendees section starts -->
+  <section class="attendees" id="attendees">
+    <div class="event-attendees">
+      <h2>Current Attendees (20)</h2>
+      <p><a href="#">See all</a></p>
+    </div>
+    <div class="img-attendees">
+      <img src="images/Rectangle2.png" alt="Host" />
+      <img src="images/Rectangle3.png" alt="Host" />
+      <img src="images/Rectangle4.png" alt="Host" />
+      <img src="images/Rectangle5.png" alt="Host" />
+      <img src="images/Rectangle6.png" alt="Host" />
+      <img src="images/Rectangle7.png" alt="Host" />
+    </div>
+  </section>
+  <!-- Attendees section ends -->
+  <!-- Interested section start -->
+  <section class="interested" id="interested">
+    <div class="row">
+      <div class="event-host">
+        <h2>You Might Be Interested</h2>
+      </div>
+    <div class="container">
+      <div class="item">
+        <img src="images/image8.png" alt="">
+        <div class="description">
+          <div class="left">
+            <h4>APR</h4>
+            <p>14</p>
+          </div>
+          <div class="right">
+            <h3>Tips for Multiple Choice Tests</h3>
+            <h5>Almost Full</h5>
+            <h6><i class="fa fa-map-marker"></i> Lakeshore <i class="fa-solid fa-ticket"></i> Free Admission</h6>
+            <h6><i class="fa-solid fa-user-group"></i> +12 people are going </h6>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/image9.png" alt="">
+        <div class="description">
+          <div class="left">
+            <h4>APR</h4>
+            <p>20</p>
+          </div>
+          <div class="right">
+            <h3>Tips for Multiple Choice Tests</h3>
+            <h5>Almost Full</h5>
+            <h6><i class="fa fa-map-marker"></i> Lakeshore <i class="fa-solid fa-ticket"></i> Free Admission</h6>
+            <h6><i class="fa-solid fa-user-group"></i> +15 people are going </h6>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/image10.png" alt="">
+        <div class="description">
+          <div class="left">
+            <h4>MAY</h4>
+            <p>01</p>
+          </div>
+          <div class="right">
+            <h3>Tips for Multiple Choice Tests</h3>
+            <h5>Almost Full</h5>
+            <h6><i class="fa fa-map-marker"></i> Lakeshore <i class="fa-solid fa-ticket"></i> Free Admission</h6>
+            <h6><i class="fa-solid fa-user-group"></i> +24 people are going </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Interested section ends -->
+  <!-- Footer section start -->
+  <footer class="footer">
+    <a class="navbar-brand" href="#">
+      <img src="images/Humber_Logo.png" class="logo" alt="logo" />
+      
+    </a>
+    <div class="footer-menu">
+      <ul>
+        <li><a href="#">LOCATION</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Footer section end -->
+
+
+  <!-- swiper js -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- custom js file link -->
+  <script>
+    function toggleBookmark() {
+        const bookmarkIcon = document.getElementById('bookmarkIcon');
+
+        // Toggle between regular and solid bookmark icons
+        if (bookmarkIcon.classList.contains('fa-regular')) {
+            bookmarkIcon.classList.remove('fa-regular');
+            bookmarkIcon.classList.add('fa-solid');
+        } else {
+            bookmarkIcon.classList.remove('fa-solid');
+            bookmarkIcon.classList.add('fa-regular');
+        }
+    }
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

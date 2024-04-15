@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <!-- custom css file -->
+  <link rel="stylesheet" href="css/style.css"/>
+  <title>Event Website</title>
+</head>
+<body>
+  <!-- Header section start -->
+  <header>
+    <a class="navbar-brand" href="#">
+      <img src="images/Humber_Logo.png" class="logo" alt="logo" />
+    </a>
+    <div class="icons">
+      <i class="fas fa-calendar-plus"></i>
+      <i class="fas fa-search" id="search-btn"></i>
+      <i class="fas fa-user" id="login-btn"></i>
+    </div>
+    <form action="" class="search-bar-container">
+      <input type="search" id="search-bar" placeholder="search here...">
+      <label for="search-bar" class="fas fa-search"></label>
+    </form>
+  </header>
+  <!-- Header section end -->
+
+  <!-- login form container -->
+  <div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+      <h3>login</h3>
+      <input type="email" class="box" placeholder="enter your Humber email">
+      <input type="password" class="box" placeholder="enter your password">
+      <input type="submit" value="login now" class="btn">
+      <input type="checkbox" id="remember">
+      <label for="remember">Remember me</label>
+      <p>forget password? <a href="#">click here</a></p>
+      <p>don't have an account? <a href="#">register now</a></p>
+    </form>
+  </div>
+  <!-- login form container end -->
+  <!-- Back section start -->
+  <div class="back-btn">
+    <a href="./register.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back</a>
+  </div>
+  
+  <section class="biling" id="biling">
+    <form>
+        <div class="form-biling">
+            <h2>Billing Address</h2>
+            <div>
+                <label for="Name">Full Name<span class="required-indicator"></span></label>
+                <input type="text" id="Name" name="Name" placeholder="Sean Doyle" required tabindex="1">
+            </div>
+            <br><br>
+            <div>
+                <label for="Address">Billing Address<span class="required-indicator"></span></label>
+                <input type="text" id="Address" name="Address" placeholder="Please Enter Your Address" required tabindex="2">
+            </div>
+            <br><br>
+            <div>
+                <label for="City">City<span class="required-indicator"></span></label>
+                <input type="text" id="City" name="City" placeholder="Toronto" required tabindex="3">
+            </div>
+            <br><br>
+            <div>
+                <label for="zipcode">Zip Code<span class="required-indicator"></span></label>
+                <input type="text" id="zipcode" name="zipcode" placeholder="A1A 1A1" required tabindex="4">
+            </div>
+            <br><br>
+            <div>
+                <label for="country">Country<span class="required-indicator"></span></label>
+                <input type="text" id="country" name="country" placeholder="Canada" required tabindex="5">
+            </div>
+            <br><br>
+            <div>
+                <label for="f">Phone Number<span class="required-indicator"></span></label>
+                <input type="text" id="f" name="phone" placeholder="(416) 555 5555" maxlength="10" required tabindex="6">
+            </div>
+
+            <h2>Credentials</h2>
+            <div>
+                <label for="EmailID">Email Address<span class="required-indicator"></span></label>
+                <input type="email" id="EmailID" name="Email" placeholder="sean.doyle@humber.ca" required tabindex="7">
+            </div>
+            <br><br>
+            <div>
+                <label for="Password">Password<span class="required-indicator"></span></label>
+                  <ul style="font-size: 13px;">
+                    <li>(at least 8 characters long, one uppercase letter and one number)</li>
+                  </ul>
+                <input type="password" id="Password" name="Password" placeholder="e.g., A25tdF$8hr!!" required tabindex="8">
+            </div>
+            <br><br>
+            <div>
+                <label for="CP">Confirm Password<span class="required-indicator"></span></label>
+                <input type="password" id="CP" name="Confirm Password" placeholder="re-enter your password" required tabindex="9">
+            </div>
+
+            <h2>Card Info</h2>
+            <div>
+                <label for="ch">Cardholder Name<span class="required-indicator"></span></label>
+                <input type="text" id="ch" name="ch" placeholder="Enter Full Name (as on Card)" required tabindex="10">
+            </div>
+            <br><br>
+            <div>
+                <label for="cn">Card Number<span class="required-indicator"></span></label>
+                <input type="text" id="cn" name="cn" placeholder="Enter Card Number (e.g., 1234 5678 9012 3456)" required tabindex="11">
+            </div>
+            <br><br>
+            <div>
+                <label for="ed">Expiry Date (MM/YY)<span class="required-indicator"></span></label>
+                <input type="text" id="ed" name="ed" placeholder="Enter Expiry Date (MM/YY)" required tabindex="12">
+            </div>
+            <br><br>
+            <div>
+                <label for="cvc">CVC<span class="required-indicator"></span></label>
+                <input type="text" id="cvc" name="cvc" placeholder="Enter CVC (e.g., 123)" required tabindex="13">
+            </div>
+            <br><br>
+            <div>
+                <input type="checkbox" id="terms" name="terms" required tabindex="14">
+                <label for="terms" style="cursor: pointer;">I agree to the Terms and Conditions<span class="required-indicator"></span></label>
+            </div>
+            <br><br>
+            <div class="submit-btn">
+                <input onclick="showThankYouPopup()" type="submit" class="btn" value="Submit Payment" tabindex="15">
+            </div>
+        </div>
+    </form>
+</section>
+
+  <!-- Footer section start -->
+  <footer class="footer">
+    <a class="navbar-brand" href="#">
+      <img src="images/Humber_Logo.png" class="logo" alt="logo" />
+      
+    </a>
+    <div class="footer-menu">
+      <ul>
+        <li><a href="#">LOCATION</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Footer section end -->
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script>
+    function showThankYouPopup() {
+        Swal.fire({
+            title: 'Thank You! Payment Has Been Made Successfully.',
+            width: 600,
+            padding: '3em',
+            background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+            backdrop: `
+                rgba(0,0,123,0.4)
+                center left
+                no-repeat
+            `
+        });
+    }
+  </script>
+    <!-- custom js file link -->
+  <script src="js/main.js"></script>
+</body>
+</html>

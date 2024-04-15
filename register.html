@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <!-- custom css file -->
+  <link rel="stylesheet" href="css/style.css"/>
+  <title>Registeration</title>
+</head>
+<body>
+  <!-- Header section start -->
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a class="navbar-brand" href="#">
+      <img src="images/Humber_Logo.png" class="logo" alt="logo" />
+    </a>
+    <div class="icons">
+      <i class="fas fa-calendar-plus"></i>
+      <i class="fas fa-search" id="search-btn"></i>
+      <i class="fas fa-user" id="login-btn"></i>
+    </div>
+    <form action="" class="search-bar-container">
+      <input type="search" id="search-bar" placeholder="search here...">
+      <label for="search-bar" class="fas fa-search"></label>
+    </form>
+  </header>
+  <!-- Header section end -->
+  
+  <!-- login form container -->
+  <div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+      <h3>login</h3>
+      <input type="email" class="box" placeholder="enter your Humber email">
+      <input type="password" class="box" placeholder="enter your password">
+      <input type="submit" value="login now" class="btn">
+      <input type="checkbox" id="remember">
+      <label for="remember">Remember me</label>
+      <p>forget password? <a href="#">click here</a></p>
+      <p>don't have an account? <a href="#">register now</a></p>
+    </form>
+  </div>
+  <!-- login form container end -->
+
+  <!-- Back section start -->
+  <div class="back-btn">
+    <a href="./index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back</a>
+  </div>
+  <!-- Back section end -->
+  <section id="info" class="info">
+    <div class="row">
+      <div class="img-event">
+        <img src="images/event.png" alt="Popular">
+      </div>
+      <div class="event-info">
+        <div class="event-name">
+          <h1><a href="https://humber.ca/today/events/i-m-too-busy-how-manage-your-time-57001">APA Workshop</a></h1>
+        </div>
+        <div class="event-amount">
+          <p>Total<span> $CA 0</span></p>
+        </div>
+        <div class="counter">
+          <button class="counter__button counter__button--decrement">
+            <svg
+              class='minus'
+              xmlns='http://www.w3.org/2000/svg'
+              width='16'
+              height='16'
+              viewBox='0 0 24 24'
+            >
+              <path d='M0 10h24v4h-24z' />
+            </svg>
+            <span class="bullet bullet--left"></span>
+          </button>
+          <div class="counter__count">
+            <span class="number">0</span>
+          </div>
+          <button class="counter__button counter__button--increment">    
+            <svg
+              class='plus'
+              xmlns='http://www.w3.org/2000/svg'
+              width='16'
+              height='16'
+              viewBox='0 0 24 24'
+            >
+              <path d='M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z' />
+            </svg>
+            <svg
+              class='bullet bullet--right'
+              xmlns='http://www.w3.org/2000/svg'
+              width='8'
+              height='8'
+              viewBox='0 0 24 24'
+            >
+              <path d='M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z' />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section >
+    <div class="card-body">
+      <h2>Payment Method</h2>
+      <div class="payment-methods">
+        <label>
+          <input type="radio" name="payment" value="googlepay">
+          <img src="images/International(1).png" alt="Google Pay">
+        </label>
+        <label>
+          <input type="radio" name="payment" value="creditcard">
+          <img src="images/International(2).png" alt="Credit Card">
+        </label>
+        <label>
+          <input type="radio" name="payment" value="applepay">
+          <img src="images/International.png" alt="Apple Pay">
+        </label>
+      </div>      
+    </div>
+    <div class="proceed-btn">
+      <form action="./payment.html"><input type="submit" class="btn" value="Proceed to Checkout"></form>
+    </div>
+  </section>
+
+
+    <!-- Footer section start -->
+  <footer class="footer">
+    <a class="navbar-brand" href="#">
+      <img src="images/Humber_Logo.png" class="logo" alt="logo" />
+      
+    </a>
+    <div class="footer-menu">
+      <ul>
+        <li><a href="#">LOCATION</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Footer section end -->
+  
+  
+
+    <!-- custom js file link -->
+    <script src="js/main.js"></script>
+  </body>
+  </html>
